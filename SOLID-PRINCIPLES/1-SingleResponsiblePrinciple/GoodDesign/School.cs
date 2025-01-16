@@ -1,9 +1,6 @@
 ﻿using SOLID_PRINCIPLES._1_SingleResponsiblePrinciple.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+
 
 namespace SOLID_PRINCIPLES._1_SingleResponsiblePrinciple.GoodDesign
 {
@@ -22,16 +19,15 @@ namespace SOLID_PRINCIPLES._1_SingleResponsiblePrinciple.GoodDesign
                 sb.Append(school.FoundingYear); sb.AppendLine();
 
                 save = BuildLog(sb.ToString());
-                LogFile(@"C:\Users\genme\OneDrive\Masaüstü\solid\SOLID-PRINCIPLES\SOLID-PRINCIPLES\1-SingleResponsiblePrinciple\GoodDesign\SchoolLog.txt", save);
+                LogFile(@"C:\SchoolLog.txt", save);
 
                 Console.WriteLine($"School insert successfull => {school.Id}");
-                LogFile(@"C:\Users\genme\OneDrive\Masaüstü\solid\SOLID-PRINCIPLES\SOLID-PRINCIPLES\1-SingleResponsiblePrinciple\GoodDesign\SchoolLog.txt", save);
-
+                LogFile(@"C:\SchoolLog.txt", save);
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Error Message:" + ex.Message);
-                LogFile(@"C:\Users\genme\OneDrive\Masaüstü\solid\SOLID-PRINCIPLES\SOLID-PRINCIPLES\1-SingleResponsiblePrinciple\GoodDesign\SchoolLog.txt", save);
+                LogFile(@"C:\SchoolLog.txt", save);
             }
         }
         
