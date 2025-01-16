@@ -8,4 +8,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="2-OpenClosedPrinciple\BadDesign\" />
+    <Folder Include="2-OpenClosedPrinciple\GoodDesign\" />
+  </ItemGroup>
+
 </Project>
