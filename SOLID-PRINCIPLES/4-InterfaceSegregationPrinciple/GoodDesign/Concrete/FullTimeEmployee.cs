@@ -10,6 +10,13 @@ namespace SOLID_PRINCIPLES._4_InterfaceSegregationPrinciple.GoodDesign.Concrete
         public string Email { get; set; }
         public decimal MonthlySalary { get; set; }
         public decimal Status { get; set; }
-        public decimal CalculateNetSalary() => MonthlySalary + Status;
+        public decimal HourlyRate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public decimal HoursInMonth { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public decimal CalaculateWorkedSalary() => MonthlySalary + Status;
+
+        public decimal CalculateNetSalary()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
